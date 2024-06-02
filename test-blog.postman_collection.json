@@ -1,0 +1,112 @@
+{
+	"info": {
+		"_postman_id": "90fa942b-62ab-4cad-8991-1cdfcfc2bb3d",
+		"name": "test-blog",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "9346104"
+	},
+	"item": [
+		{
+			"name": "create",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"title\":\"ayam\",\n    \"content\":\"M Zayyan R\",\n    \"tags\":[\"ram\",\"dhan\"],\n    \"status\":\"draft\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:7878/api/posts/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "7878",
+					"path": [
+						"api",
+						"posts",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "update",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"title\":\"Goreng\",\n    \"content\":\"M Zayyan R 2\",\n    \"tags\":[\"zay\",\"yan\"],\n    \"status\":\"publish\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:7878/api/posts/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "7878",
+					"path": [
+						"api",
+						"posts",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "delete",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:7878/api/posts/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "7878",
+					"path": [
+						"api",
+						"posts",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Data",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:7878/api/posts/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "7878",
+					"path": [
+						"api",
+						"posts",
+						"1"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
